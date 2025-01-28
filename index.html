@@ -14,8 +14,13 @@ body {
     background-color: offwhite;
 }
 
+.container {
+    max-width: 800px;
+    
+}
+
 * {
-    color: lightgrey;
+    color: black;
 }
 
  ul {
@@ -33,18 +38,41 @@ margin: auto;
 
 
 p,h2 {
-    max-width: 800px;
     font-weight: normal;
 }
 
-.info:hover * {
-         color: black;
+.info {
+    opacity: 0.2;
+}
+
+.info:hover {
+    opacity: 1;
 }
 
 a:hover {
     font-style: italic;
 }
 
+img {
+    max-height: 150px;
+    filter: grayscale(1);
+}
+
+img:hover {
+    max-height: 800px;
+}
+
+figcaption {
+    font-size: 10px;
+    text-decoration: none;
+    max-width: 150px;
+}
+
+.image-container {
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+}
 
 @media (min-width: 800px) { 
     li, p, a {
@@ -83,7 +111,7 @@ a:hover {
         <li>Syllabus: <a href="https://docs.google.com/document/d/1LQIcLg7JRbAQFXtqF5dalGHd8Nqlz_BP0u_nRIPG11o/edit?tab=t.0">PUCD 2125</a><br></li>
     </ul>
 </div>
-</div>
+
 
 <div class="info">
     <h2>Course Description</h2>
@@ -93,8 +121,29 @@ a:hover {
 
 <div class="info" style="border: none; padding-bottom: 0px;">
     <h2>Project 1: Structure & Style (due February 20)</h2>
-    <p>Create a responsive, multi-page website that publishes an existing text of your choice, visually amplifying its conceptual ideas through typography.</p>
+    <p>In this first unit we will focus on the fundamental relationship between structure and style as an organizing principle in design and on the web.
+<br>
+Create a responsive, multi-page website that publishes an existing text of your choice, visually amplifying its conceptual ideas through typography.</p>
+
+<div class="image-container">
+
+<a href="https://www.galeriebuchholz.de/exhibitionsmedia/jack-goldstein-galerie-buchholz-new-york-2024/69">
+<img src="images/JackGoldstein_GalleryBuchholz.jpg">
+<figcaption>Jack Goldstein, “Totems: Selected Writings”</figcaption>
+</a>
+
+
+<a href="https://d2w9rnfcy7mm78.cloudfront.net/1979475/original_05f251313bf0f219ee104c092b02cc5e.gif?1522583718?bc=1">
+<img src="images/Shellphone_ItFollows.gif">
+<figcaption>Shellphone from "It Follows"</figcaption>
+</a>
+
+
 </div>
+</div>
+
+
+
 
 <div class="info" style="border: none; padding-top: 20px; padding-bottom: 0px;">
 <ul >
@@ -198,7 +247,8 @@ a:hover {
    <ul>
     <li>This website was inspired by:</li>
     </ul>
-</div> 
+</div>
+</div>
     
 </body>
 </html>
