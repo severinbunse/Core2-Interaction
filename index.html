@@ -63,10 +63,15 @@ img:hover {
     max-width: 800px;
 }
 
+figure {
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
+}
+
 figcaption {
     font-size: 10px;
     text-decoration: none;
-    max-width: 150px;
 }
 
 .image-container {
@@ -100,7 +105,7 @@ figcaption {
     }
 
     image:hover {
-        max-width: 100%;
+         pointer-events: none;
     }
 
 }
