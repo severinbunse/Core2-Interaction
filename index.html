@@ -60,6 +60,7 @@ img {
 
 img:hover {
     max-height: 800px;
+    max-width: 800px;
 }
 
 figcaption {
@@ -71,8 +72,10 @@ figcaption {
 .image-container {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     gap: 2em;
-    width: 100%;
+    max-width: 800px;
+    background-color: red;
 }
 
 @media (min-width: 800px) { 
@@ -136,17 +139,18 @@ Create a responsive, multi-page website that publishes an existing text of your 
 
 <div class="image-container">
 
-
+<figure>
 <img src="images/JackGoldstein_GalleryBuchholz.jpg">
 <figcaption>Left: Jack Goldstein, “Totems: Selected Writings” at Galerie Buchholz</figcaption>
+</figure>
 
-
+<figure>
 <img src="images/Shellphone_ItFollows.gif">
 <figcaption>Left: Shellphone from the movie "It Follows"</figcaption>
-
-
+</figure>
 
 </div>
+
 </div>
 
 
